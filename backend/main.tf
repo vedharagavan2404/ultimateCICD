@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "example" {
 }
 
 resource "aws_dynamodb_table" "basic-dynamodb-table" {
-  name           = "terraform-eks-state-locks"
+  name           = "terraform-eks-state-locks-new"
   billing_mode   = "PAY_PER_REQUEST"
   hash_key       = "LockID"
 
