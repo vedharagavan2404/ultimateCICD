@@ -11,7 +11,7 @@ resource "aws_iam_role" "cluster" {
         Effect = "Allow"
         Sid    = ""
         Principal = {
-          Service = "ec2.amazonaws.com"
+          Service = "eks.amazonaws.com"
         }
       },
     ]
