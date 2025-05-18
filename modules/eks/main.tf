@@ -46,7 +46,7 @@ resource "aws_eks_cluster" "main" {
 
 resource "aws_iam_role" "worker" {
   # The IAM role for the EKS worker nodes.
-  name = "${var.cluster_name}-cluster-role"
+  name = "${var.cluster_name}-worker-role"
 
   # Terraform's "jsonencode" function converts a
   # Terraform expression result to valid JSON syntax.
